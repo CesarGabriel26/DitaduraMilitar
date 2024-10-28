@@ -1,0 +1,25 @@
+.title-center {
+    text-align: center;
+    font-weight: 400;
+}
+
+.card-img-div {
+    background-image: url(https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png);
+    min-height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    user-select: none !important;
+}
+
+.card-fade {
+    opacity: 1;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.card-fade:hover {
+    opacity: .5;
+}
