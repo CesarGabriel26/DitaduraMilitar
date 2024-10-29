@@ -23,3 +23,29 @@ body {
 .card-fade:hover {
     opacity: .5;
 }
+
+.img-section {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.img-section img {
+    height: 100%;
+    width: 100%;
+}
+
+.img-section .floating-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+}

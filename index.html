@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ditadura</title>
-    <link rel="stylesheet" href="./css/bunda.css">
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/index.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body data-bs-theme="dark" class="overflow-x-hidden">
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Memorias da ditadura</a>
@@ -36,44 +37,44 @@
     </header>
 
     <main>
-        <section style="
-            background-image: url(./img/diretasjaescura.jpg);
-
-
-            margin-bottom: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
-            ">
-            <h1 style="font-weight: 300 ;">MEMÓRIAS DA DITADURA</h1>
-            <h6 style="font-weight: 400 ;">1964 - 1985</h6>
-            <!-- <img src="./img/diretasjaescura.jfif" alt=""> -->
+        <section class="img-section">
+            <img src="./img/DiretasJa.jpg" alt="">
+            <div class="floating-text">
+                <h1 style="font-weight: 300 ;">MEMÓRIAS DA DITADURA</h1>
+                <h6 style="font-weight: 400 ;">1964 - 1985</h6>
+            </div>
         </section>
 
-        <section style="padding-left: 5%;" class="container">
-            <h2 class="title-center mt-5 mb-5">O que foi?</h2>
-            
-            <div class="row justify-content-center justify-content-md-between">
-                <div class="col-12 col-md-5">
-                    <p style="text-align: justify;" >
-                        A ditadura militar foi um período de terror na história brasileira. Iniciada em 1964 
-                        após um golpe feito pelo exército usando a desculpa de uma ameaça comunista, foi instaurado
-                        um governo de opressão, tortura, instabilidade social e econômica além da corrupção 
-                        extrema.
-                        <br><br>
-                        Além de não permitirem a existência de partidos que não fossem os já criados pelos
-                        militares, a liberdade de expressão não existia. 
-                    </p>
+        <section>
+            <div style="padding-left: 5%; padding-right: 5%;" class="container">
+                <h2 class="title-center mt-5 mb-4">O que foi?</h2>
+
+                <div class="row justify-content-center justify-content-md-between">
+                    <div class="col-12 col-md-6">
+                        <p style="text-align: justify;">
+                            A ditadura militar foi um período de terror na história brasileira. Iniciada em 1964
+                            após um golpe feito pelo exército usando a desculpa de uma ameaça comunista, acusando
+                            organizações populares do governo Jânio Quadros foi instaurado
+                            um governo de opressão, tortura, instabilidade social e econômica além da corrupção
+                            extrema.
+                            <br><br>
+                            Além de não permitirem a existência de partidos que não fossem os já criados pelos
+                            militares, a liberdade de expressão não existia. Todos que se opusiam contra o governo
+                            acabavam mortos, desaparecidos e até torturados.
+                            <br><br>
+                            A ditadura teve seu fim em 1985 com Tancredo Neves vencendo as eleições indiretas quando
+                            a oposição decidiu participar, assim derrotando Paulo Maluf, colocando um fim no governo
+                            de opressão.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="img/DitaduraAssassina.png" style="width: 100%;">
+                    </div>
                 </div>
-                <div class="col-12 col-md-5">
-                    <img src="img/tababoca.jpg" alt="" style="height: 350px;">
-                </div>
+                <hr class="mt-5">
             </div>
-
-
             <!-- <h2 class="title-center">Acontecimentos</h2>
+
             <p>
                 A ditadura foi marcada pela violencia e pela censura. Muitas pessoas foram mortas e desapareceram
                 misteriosamente no Brasil
@@ -81,9 +82,10 @@
                 negros e
                 pessoas da
                 comunidade LGBTQIAPN+.
-            </p>
+            </p> -->
 
-            <h2 class="title-center">Participação das mulheres</h2>
+
+            <!-- <h2 class="title-center">Participação das mulheres</h2>
             <p>
                 Aqui estão alguns acontecimentos relacionados com as mulheres da época
             </p>
@@ -99,7 +101,8 @@
             <div class="row p-5 justify-content-center ">
                 <div class="col-12 col-md-3 mb-3">
                     <div class="card card-fade">
-                        <div class="card-img-div">
+                        <div class="card-img-div"
+                            style="background-image: url('./img/TapaBoca.jpg'); border-top-left-radius: 5px; border-top-right-radius: 5px;">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Acontecimentos</h5>
@@ -108,25 +111,92 @@
                 </div>
                 <div class="col-12 col-md-3 mb-3">
                     <div class="card card-fade">
-                        <div class="card-img-div">
+                        <div class="card-img-div"
+                            style="background-image: url('./img/lutapoupou.png'); border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Luta por direitos</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card card-fade">
+                        <div class="card-img-div"
+                            style="background-image: url('./img/amanhavaiseamabosta.png'); border-top-left-radius: 5px; border-top-right-radius: 5px;">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Cultura</h5>
                         </div>
                     </div>
                 </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div style="padding-left: 5%; padding-right: 5%;" class="container">
+                <hr>
+                <h2 class="title-center mt-5 mb-4">A mulher na ditadura</h2>
+
+                <div class="row justify-content-center justify-content-md-between">
+                    <div class="col-12 col-md-6">
+                        <img src="img/MulherManifestando.png" style="width: 100%;">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p style="text-align: justify;">
+                            As mulheres sempre estiveram presentes nos movimentos de contestação e mobilizações sociais
+                            ao longo da História brasileira e, no período da Ditadura, não foi diferente. Elas
+                            desenvolveram
+                            diversas formas de resistência: se organizaram em clubes de mães, associações, comunidades
+                            eclesiais
+                            de base, em movimentos contra o custo de vida e por creches.
+                            <br><br>
+                            Desafiando o papel feminino tradicional à
+                            época, participaram do movimento estudantil, partidos e sindicatos além de pegarem em armas,
+                            ainda que em menor número que os homens, na tentativa de derrubar o regime militar, sendo
+                            duramente reprimidas. E, em especial, foram elas que iniciaram o movimento pela anistia.
+                        </p>
+                    </div>
+                </div>
+                <hr class="mt-5">
+            </div>
+        </section>
+
+        <section>
+            <div class="row p-5 justify-content-center ">
                 <div class="col-12 col-md-3 mb-3">
                     <div class="card card-fade">
-                        <div class="card-img-div">
+                        <div class="card-img-div"
+                            style="background-image: url('./img/TapaBoca.jpg'); border-top-left-radius: 5px; border-top-right-radius: 5px;">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Acontecimentos</h5>
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card card-fade">
+                        <div class="card-img-div"
+                            style="background-image: url('./img/lutapoupou.png'); border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Luta por direitos</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card card-fade">
+                        <div class="card-img-div"
+                            style="background-image: url('./img/amanhavaiseamabosta.png'); border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cultura</h5>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
-        <br>
     </main>
 
     <footer style="
